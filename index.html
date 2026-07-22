@@ -3,7 +3,6 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>STYLE BY RN | Hair salon in Durban, South Africa</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
@@ -247,22 +246,94 @@
       }
     }
   </style>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
-<style id="ai-site-theme-widget-style">
+<style id="ai-site-theme-widget-style" data-ai-site-theme-version="3">
   :root {
-    --ai-primary: #0f9f96;
-    --ai-secondary: #2563eb;
-    --ai-accent: #f59e0b;
+    --ai-text: #102033;
+    --ai-background: #fff1f2;
+    --ai-highlight: #be185d;
+    --ai-highlight-deep: #891143;
+    --ai-highlight-soft: #ce4f84;
+    --ai-on-highlight: #ffffff;
   }
-  body { accent-color: var(--ai-primary); }
-  a { color: var(--ai-primary); }
+  body {
+    color: var(--ai-text) !important;
+    background: var(--ai-background) !important;
+    accent-color: var(--ai-highlight);
+  }
+  main,
+  section,
+  .card,
+  .service-card,
+  .about-panel,
+  .contact-card {
+    color: var(--ai-text);
+  }
+  a,
+  .section-kicker,
+  .service-number {
+    color: var(--ai-highlight);
+  }
   .btn-primary,
   .btn-brand,
+  .badge,
+  .service-icon,
   button[type="submit"] {
-    background-color: var(--ai-primary) !important;
-    border-color: var(--ai-primary) !important;
+    background: var(--ai-highlight) !important;
+    border-color: var(--ai-highlight) !important;
+    color: var(--ai-on-highlight) !important;
+  }
+  .hero,
+  .hero-section,
+  .about-gradient,
+  .cta-band,
+  .ai-generated-hero-image {
+    background: linear-gradient(
+      135deg,
+      var(--ai-highlight-deep) 0%,
+      var(--ai-highlight) 52%,
+      var(--ai-highlight-soft) 100%
+    ) !important;
+    color: var(--ai-on-highlight) !important;
+  }
+  :is(.hero, .hero-section, .about-gradient, .cta-band, .ai-generated-hero-image)
+  :is(h1, h2, h3, h4, h5, h6, p, .hero-title, .hero-text, .hero-badge, .section-kicker) {
+    color: var(--ai-on-highlight) !important;
+  }
+  :is(.hero, .hero-section, .about-gradient, .cta-band, .ai-generated-hero-image)
+  :is(.floating-chip, .fact, .btn-light) {
+    color: var(--ai-text) !important;
+  }
+  :is(.hero, .hero-section, .about-gradient, .cta-band, .ai-generated-hero-image)
+  :is(.btn-outline-light, .contact-pill) {
+    color: var(--ai-on-highlight) !important;
+    border-color: var(--ai-on-highlight) !important;
+  }
+  .hero-title,
+  .hero-card,
+  .hero-card-body,
+  .hero-card-body :is(h1, h2, h3, h4, h5, h6, p),
+  .floating-chip {
+    min-width: 0;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+  .floating-chip {
+    white-space: normal;
+    text-align: left;
+  }
+  :is(.hero-card, .hero-image, .ai-generated-hero-image)
+  img[src^="data:image/svg+xml;base64,"] {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    aspect-ratio: 3 / 2 !important;
+    object-fit: contain !important;
+  }
+  .floating-chip,
+  .fact,
+  .stat-card {
+    border-color: var(--ai-highlight) !important;
   }
   .ai-site-theme-widget {
     position: fixed;
@@ -313,6 +384,46 @@
     min-height: 34px;
   }
 </style>
+  <script id="ai-site-alpine-runtime" defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.15.12/dist/cdn.min.js"></script>
+  <script id="ai-site-motion-runtime" type="module">import { animate } from "https://cdn.jsdelivr.net/npm/motion@12.42.2/mini/+esm";window.aiSiteMotionAnimate = animate;</script>
+<style id="ai-site-interactive-profile-style" data-ai-site-profile="highly-interactive">
+  [x-cloak] { display: none !important; }
+  .ai-business-details { padding: clamp(3.5rem, 8vw, 6.5rem) 0; background: color-mix(in srgb, var(--ai-background) 92%, var(--ai-highlight) 8%); }
+  .ai-business-details h2 { max-width: 820px; margin: .5rem 0 1rem; font-size: clamp(2rem, 5vw, 3.5rem); }
+  .ai-business-summary { max-width: 760px; color: color-mix(in srgb, var(--ai-text) 75%, transparent); font-size: 1.08rem; }
+  .ai-business-tabs { display: flex; flex-wrap: wrap; gap: .65rem; margin: 1.75rem 0 1rem; }
+  .ai-business-tabs button { min-height: 44px; padding: .7rem 1rem; border: 1px solid color-mix(in srgb, var(--ai-highlight) 35%, transparent); border-radius: 999px; background: transparent; color: var(--ai-text); font-weight: 800; }
+  .ai-business-tabs button.active, .ai-business-tabs button:hover, .ai-business-tabs button:focus-visible { background: var(--ai-highlight); color: var(--ai-on-highlight); outline-offset: 3px; }
+  .ai-business-panel { padding: clamp(1.1rem, 3vw, 2rem); border: 1px solid color-mix(in srgb, var(--ai-highlight) 24%, transparent); border-radius: 22px; background: color-mix(in srgb, var(--ai-background) 82%, #ffffff 18%); box-shadow: 0 18px 55px rgba(15, 23, 42, .09); }
+  .ai-business-facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: .85rem; margin: 0; }
+  .ai-business-fact { min-width: 0; padding: 1rem; border-radius: 15px; background: color-mix(in srgb, var(--ai-background) 88%, var(--ai-highlight) 12%); }
+  .ai-business-fact dt { margin-bottom: .3rem; color: var(--ai-highlight); font-size: .75rem; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; }
+  .ai-business-fact dd { margin: 0; overflow-wrap: anywhere; color: var(--ai-text); font-weight: 750; }
+  .ai-business-actions { display: flex; flex-wrap: wrap; gap: .75rem; }
+  .ai-business-faq { border-bottom: 1px solid color-mix(in srgb, var(--ai-highlight) 22%, transparent); }
+  .ai-business-faq:last-child { border-bottom: 0; }
+  .ai-business-faq h3 { margin: 0; font-size: 1rem; }
+  .ai-business-faq button { width: 100%; min-height: 52px; display: flex; align-items: center; justify-content: space-between; gap: 1rem; border: 0; background: transparent; color: var(--ai-text); text-align: left; font: inherit; font-weight: 850; }
+  .ai-business-faq p { margin: 0; padding: 0 0 1rem; }
+  [data-ai-interaction] { transition: transform .2s ease, box-shadow .2s ease; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto !important; }
+    *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; }
+  }
+</style>
+  <title>STYLE BY RN | Beauty &amp; Personal Care in Durban, South Africa</title>
+  <meta name="description" content="Local hair salon services and contact information for STYLE BY RN in Durban.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="ai-site-indexing-mode" content="preview">
+  <meta name="theme-color" content="#be185d">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="STYLE BY RN | Beauty &amp; Personal Care in Durban, South Africa">
+  <meta property="og:description" content="Local hair salon services and contact information for STYLE BY RN in Durban.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="STYLE BY RN | Beauty &amp; Personal Care in Durban, South Africa">
+  <meta name="twitter:description" content="Local hair salon services and contact information for STYLE BY RN in Durban.">
+<script id="ai-site-local-business-schema" type="application/ld+json">{"@context": "https://schema.org", "@type": "LocalBusiness", "name": "STYLE BY RN", "description": "Local hair salon services and contact information for STYLE BY RN in Durban.", "areaServed": "Durban, South Africa", "telephone": "+27 74 235 9959"}</script>
+  <meta name="ai-site-seo-gate" content="passed">
 </head>
 
 <body>
@@ -430,7 +541,38 @@
       </div>
     </section>
 
-    <section id="contact" class="section-padding">
+    <section id="business-details" class="ai-business-details section-padding" data-ai-business-details data-ai-reveal x-data="{ activeTab: 'overview' }">
+  <div class="container">
+    <span class="section-kicker">Verified public profile</span>
+    <h2>Business details for STYLE BY RN</h2>
+    <p class="ai-business-summary">Local hair salon services and contact information for STYLE BY RN in Durban.</p>
+    <div class="ai-business-tabs" role="tablist" aria-label="Business information">
+      <button type="button" role="tab" @click="activeTab = 'overview'" :aria-selected="(activeTab === 'overview').toString()" :class="{ active: activeTab === 'overview' }" data-ai-interaction>Overview</button>
+      <button type="button" role="tab" @click="activeTab = 'contact'" :aria-selected="(activeTab === 'contact').toString()" :class="{ active: activeTab === 'contact' }" data-ai-interaction>Contact</button>
+      <button type="button" role="tab" @click="activeTab = 'questions'" :aria-selected="(activeTab === 'questions').toString()" :class="{ active: activeTab === 'questions' }" data-ai-interaction>Common questions</button>
+    </div>
+    <div class="ai-business-panel" x-show="activeTab === 'overview'">
+      <dl class="ai-business-facts"><div class="ai-business-fact"><dt>Business</dt><dd>STYLE BY RN</dd></div><div class="ai-business-fact"><dt>Industry</dt><dd>Beauty &amp; Personal Care</dd></div><div class="ai-business-fact"><dt>Location</dt><dd>Durban, South Africa</dd></div><div class="ai-business-fact"><dt>Phone</dt><dd>+27 74 235 9959</dd></div><div class="ai-business-fact"><dt>Information source</dt><dd>Existing generated business record</dd></div></dl>
+    </div>
+    <div class="ai-business-panel" x-show="activeTab === 'contact'" x-cloak>
+      <p>Contact STYLE BY RN using the verified details supplied with this business record.</p>
+      <div class="ai-business-actions"><a class="btn btn-primary" href="tel:+27 74 235 9959">Call +27 74 235 9959</a></div>
+    </div>
+    <div class="ai-business-panel" x-show="activeTab === 'questions'" x-cloak>
+      <div class="ai-business-faqs"><article class="ai-business-faq" x-data="{ open: false }">
+          <h3><button type="button" @click="open = !open" :aria-expanded="open.toString()" data-ai-interaction>What does STYLE BY RN offer?<span aria-hidden="true">+</span></button></h3>
+          <div x-show="open" x-cloak><p>The supplied business profile lists Beauty Appointments, Personal Care, Style Consultations, Booking Enquiries.</p></div>
+        </article><article class="ai-business-faq" x-data="{ open: false }">
+          <h3><button type="button" @click="open = !open" :aria-expanded="open.toString()" data-ai-interaction>Where is STYLE BY RN located?<span aria-hidden="true">+</span></button></h3>
+          <div x-show="open" x-cloak><p>The public business details identify Durban, South Africa.</p></div>
+        </article><article class="ai-business-faq" x-data="{ open: false }">
+          <h3><button type="button" @click="open = !open" :aria-expanded="open.toString()" data-ai-interaction>How can I contact STYLE BY RN?<span aria-hidden="true">+</span></button></h3>
+          <div x-show="open" x-cloak><p>Use +27 74 235 9959 to contact the business directly.</p></div>
+        </article></div>
+    </div>
+  </div>
+</section>
+<section id="contact" class="section-padding">
       <div class="container">
         <div class="cta-band text-center">
           <span class="section-kicker text-white">Ready to connect?</span>
@@ -499,29 +641,122 @@
     });
   </script>
 
-<aside class="ai-site-theme-widget" data-ai-site-theme-widget aria-label="Site color controls">
+<aside class="ai-site-theme-widget" data-ai-site-theme-widget data-ai-default-text="#102033" data-ai-default-background="#fff1f2" data-ai-default-highlight="#be185d" data-ai-theme-name="beauty" aria-label="Site color controls">
   <strong>Site colors</strong>
   <div class="ai-site-theme-controls">
-    <label>Primary<input type="color" data-theme-color="primary" value="#0f9f96"></label>
-    <label>Accent<input type="color" data-theme-color="accent" value="#f59e0b"></label>
-    <label>Deep<input type="color" data-theme-color="secondary" value="#2563eb"></label>
+    <label>Text<input type="color" data-theme-color="text" value="#102033"></label>
+    <label>Background<input type="color" data-theme-color="background" value="#fff1f2"></label>
+    <label>Highlights<input type="color" data-theme-color="highlight" value="#be185d"></label>
   </div>
   <button class="ai-site-theme-reset" type="button" data-theme-reset>Reset colors</button>
 </aside>
 
-<script id="ai-site-theme-widget-script">
+<script id="ai-site-theme-widget-script" data-ai-site-theme-version="3">
   window.addEventListener("DOMContentLoaded", function () {
-    var storageKey = "ai-site-factory-theme";
-    var defaults = { primary: "#0f9f96", secondary: "#2563eb", accent: "#f59e0b" };
+    var widget = document.querySelector("[data-ai-site-theme-widget]");
+    var themeName = widget && widget.dataset.aiThemeName ? widget.dataset.aiThemeName : "local-service";
+    var storageKey = "ai-site-factory-theme-v3-" + themeName;
+    var defaults = {
+      text: widget && widget.dataset.aiDefaultText ? widget.dataset.aiDefaultText : "#102033",
+      background: widget && widget.dataset.aiDefaultBackground ? widget.dataset.aiDefaultBackground : "#fff1f2",
+      highlight: widget && widget.dataset.aiDefaultHighlight ? widget.dataset.aiDefaultHighlight : "#be185d"
+    };
     var root = document.documentElement;
+    function normalizeHex(value, fallback) {
+      return /^#[0-9a-f]{6}$/i.test(value || "") ? value : fallback;
+    }
+    function rgb(hex) {
+      var value = parseInt(hex.slice(1), 16);
+      return [(value >> 16) & 255, (value >> 8) & 255, value & 255];
+    }
+    function mix(hex, target, amount) {
+      var sourceRgb = rgb(hex);
+      var targetRgb = rgb(target);
+      var channels = sourceRgb.map(function (channel, index) {
+        return Math.round(channel + (targetRgb[index] - channel) * amount);
+      });
+      return "#" + channels.map(function (channel) {
+        return channel.toString(16).padStart(2, "0");
+      }).join("");
+    }
+    function luminance(hex) {
+      return rgb(hex).map(function (channel) {
+        var value = channel / 255;
+        return value <= 0.04045 ? value / 12.92 : Math.pow((value + 0.055) / 1.055, 2.4);
+      }).reduce(function (total, value, index) {
+        return total + value * [0.2126, 0.7152, 0.0722][index];
+      }, 0);
+    }
+    function contrast(first, second) {
+      var brighter = Math.max(luminance(first), luminance(second));
+      var darker = Math.min(luminance(first), luminance(second));
+      return (brighter + 0.05) / (darker + 0.05);
+    }
+    function decodeSvgDataUri(source) {
+      try {
+        var payload = source.split(",", 2)[1] || "";
+        var binary = atob(payload);
+        var bytes = Uint8Array.from(binary, function (character) { return character.charCodeAt(0); });
+        return new TextDecoder().decode(bytes);
+      } catch (error) {
+        return "";
+      }
+    }
+    function encodeSvgDataUri(svg) {
+      var bytes = new TextEncoder().encode(svg);
+      var binary = "";
+      bytes.forEach(function (value) { binary += String.fromCharCode(value); });
+      return "data:image/svg+xml;base64," + btoa(binary);
+    }
+    function recolorFallbackImages(highlight, highlightSoft) {
+      document.querySelectorAll('img[src^="data:image/svg+xml;base64,"]').forEach(function (image) {
+        var template = image.aiSiteFallbackSvgTemplate;
+        if (!template) {
+          template = decodeSvgDataUri(image.getAttribute("src") || "");
+          if (!template.includes("ai-site-fallback-image-v2")) return;
+          image.aiSiteFallbackSvgTemplate = template;
+        }
+        var documentValue = new DOMParser().parseFromString(template, "image/svg+xml");
+        if (documentValue.querySelector("parsererror")) return;
+        documentValue.querySelectorAll('[data-ai-color="highlight"]').forEach(function (element) {
+          var attribute = element.tagName.toLowerCase() === "stop" ? "stop-color" : "fill";
+          element.setAttribute(attribute, highlight);
+        });
+        documentValue.querySelectorAll('[data-ai-color="highlight-soft"]').forEach(function (element) {
+          var attribute = element.tagName.toLowerCase() === "stop" ? "stop-color" : "fill";
+          element.setAttribute(attribute, highlightSoft);
+        });
+        image.setAttribute("src", encodeSvgDataUri(new XMLSerializer().serializeToString(documentValue)));
+      });
+    }
     function readTheme() {
       try { return Object.assign({}, defaults, JSON.parse(localStorage.getItem(storageKey) || "{}")); }
       catch (error) { return Object.assign({}, defaults); }
     }
     function applyTheme(theme) {
-      root.style.setProperty("--ai-primary", theme.primary || defaults.primary);
-      root.style.setProperty("--ai-secondary", theme.secondary || defaults.secondary);
-      root.style.setProperty("--ai-accent", theme.accent || defaults.accent);
+      var text = normalizeHex(theme.text, defaults.text);
+      var background = normalizeHex(theme.background, defaults.background);
+      var highlight = normalizeHex(theme.highlight, defaults.highlight);
+      var lightText = "#ffffff";
+      var darkText = "#102033";
+      var onHighlight = contrast(darkText, highlight) >= contrast(lightText, highlight) ? darkText : lightText;
+      var highlightDeep = mix(highlight, onHighlight === darkText ? "#ffffff" : "#000000", onHighlight === darkText ? 0.08 : 0.28);
+      var highlightSoft = mix(highlight, onHighlight === darkText ? "#ffffff" : "#000000", onHighlight === darkText ? 0.24 : 0.08);
+      root.style.setProperty("--ai-text", text);
+      root.style.setProperty("--ai-background", background);
+      root.style.setProperty("--ai-highlight", highlight);
+      root.style.setProperty("--ai-highlight-deep", highlightDeep);
+      root.style.setProperty("--ai-highlight-soft", highlightSoft);
+      root.style.setProperty("--ai-on-highlight", onHighlight);
+      root.style.setProperty("--ink", text);
+      root.style.setProperty("--dark", text);
+      root.style.setProperty("--background", background);
+      root.style.setProperty("--template-bg", background);
+      root.style.setProperty("--primary", highlight);
+      root.style.setProperty("--secondary", highlightSoft);
+      root.style.setProperty("--accent", highlightDeep);
+      root.style.setProperty("--template-accent", highlight);
+      recolorFallbackImages(highlight, highlightSoft);
       document.querySelectorAll("[data-theme-color]").forEach(function (input) {
         input.value = theme[input.dataset.themeColor] || defaults[input.dataset.themeColor];
       });
@@ -546,6 +781,36 @@
         applyTheme(theme);
       });
     }
+  });
+</script>
+<script id="ai-site-interactive-profile-script" data-ai-site-profile="highly-interactive">
+  window.addEventListener("DOMContentLoaded", function () {
+    var reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (reducedMotion || !window.aiSiteMotionAnimate) return;
+    var animate = window.aiSiteMotionAnimate;
+    var reveal = function (element) {
+      if (element.dataset.aiRevealed) return;
+      element.dataset.aiRevealed = "true";
+      animate(element, { opacity: [0, 1], transform: ["translateY(28px)", "translateY(0px)"] }, { duration: .65, ease: "easeOut" });
+    };
+    var targets = Array.from(document.querySelectorAll("main > section, [data-ai-reveal]"));
+    if ("IntersectionObserver" in window) {
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) return;
+          reveal(entry.target);
+          observer.unobserve(entry.target);
+        });
+      }, { threshold: .12 });
+      targets.forEach(function (element) { observer.observe(element); });
+    } else {
+      targets.forEach(reveal);
+    }
+    document.querySelectorAll("[data-ai-interaction]").forEach(function (element) {
+      element.addEventListener("click", function () {
+        animate(element, { transform: ["scale(1)", "scale(.97)", "scale(1)"] }, { duration: .24 });
+      });
+    });
   });
 </script>
 </body>
